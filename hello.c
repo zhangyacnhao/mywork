@@ -16,25 +16,38 @@ void mydef(a,b)
 	printf("add result is %d\n",c);
 }
 int jc(){
-	int d=0;int i=0;
-	printf("please intput a unsigned number:\n");
+	int d=0;int i;
+	printf("please intput a unsigned number:");
 	scanf("%d",&d);
 	printf("d=%d\n",d);
 	//sleep(10);
-		for(i=0;i<d;i++){
+	int e=d;
+		for(i=0;i<e;i++){
 		//d=d+i;
-		d=d+(d-i);
-		printf("xunhuannei:%d\n",d);		
+		d=d+i;
+		//printf("xunhuannei:%d\n",d);		
 	}
-	printf("xuanhuanwan\n");
+	printf("%d de jc sult is %d\n",e,d);
 	return 0;
 	
+}
+void not7()
+{
+	int a;
+	for(a=0;a<10;a++)
+	{
+	if (a%10==7) continue;
+	if (a/10==7) continue;
+	if (a%7==0) continue;
+	printf("%d\n",a);
+	}
 }
 int main()
 {
 	printf("hello world\n");
 	mydef(9,10);
 	jc();
+	not7();
 	return 0;
 
 }
