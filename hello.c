@@ -80,3 +80,4 @@ printf("年龄：%d 分数：%.2f 性别：%c\n", a.age, a.score, a.sex  );
  
 return 0;
 }
+printf("helloworld");
